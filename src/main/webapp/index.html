@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phishing URL Detection System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🔐 Phishing URL Detection System</h1>
+
+    <!-- Navigation -->
+    <div class="nav">
+        <a href="about-algorithm.jsp">Algorithm</a>
+        <a href="architecture.jsp">Architecture</a>
+        <a href="limitations.jsp">Limitations</a>
+        <a href="admin-login.jsp">Admin</a>
+    </div>
+
+    <p class="subtitle">
+        Algorithm-based cybersecurity tool to detect malicious links from
+        URLs, Emails, WhatsApp, and SMS messages
+    </p>
+
+    <!-- MESSAGE / URL SCANNER -->
+    <form action="check" method="post" onsubmit="return validateMessageFinal()">
+
+        <textarea
+            name="inputText"
+            id="inputText"
+            rows="4"
+            placeholder="Paste URL or full message here (Email / WhatsApp / SMS)"
+            onkeyup="validateMessageLive()"
+            required>
+        </textarea>
+
+        <p id="error"></p>
+
+        <button type="submit">
+            Analyze Message
+        </button>
+    </form>
+
+    <!-- Info section -->
+    <div class="info">
+        <h3>How it works</h3>
+        <ul>
+            <li>Extracts URLs from copied messages</li>
+            <li>Analyzes URL structure and protocol</li>
+            <li>Detects social-engineering keywords</li>
+            <li>Applies risk-scoring algorithm</li>
+            <li>Classifies as SAFE, SUSPICIOUS, or PHISHING</li>
+        </ul>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script src="js/script.js"></script>
+<footer class="footer">
+    <p>
+        © 2026 |
+        Developed by
+        <a href="https://github.com/2200031021"
+           target="_blank"
+           rel="noopener noreferrer">
+            Anitha Sivalasetty
+        </a><br>
+        Final Year B.Tech Project – KL University- Computer Science and Engineering. Specialization: Cybersecurity & Blockchain Technology<br>
+        Unauthorized copying or reuse is strictly prohibited.
+    </p>
+</footer>
+
+
+</body>
+</html>
+<!--
+Project Title : Phishing URL Detection System
+Author        : Anitha Sivalasetty
+Institution   : B.Tech – Cybersecurity & Blockchain
+Year          : 2026
+Note          : This project is developed for academic purposes.
+Unauthorized copying is prohibited.
+-->
+
